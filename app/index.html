@@ -6,33 +6,33 @@
 </head>
 <body>
 
-	<div id="main">
+	<div id="main" v-cloak>
 		
 		<div class="form">
 			
 			<h1>Services</h1>
 
-			<div class="service">
+			<div class="serviceSection" v-on:click="getTotal();">
 				<h3 class="serviceName">Web Development</h3>
-				<p class="price">$300.00</p>
+				<p class="price">${{ price }}</p>
 			</div>
 
-			<div class="service">
+			<div class="serviceSection">
 				<h3 class="serviceName">Design</h3>
-				<p class="price">$400.00</p>
+				<p class="price">${{ price }}</p>
 			</div>
 
-			<div class="service">
+			<div class="serviceSection">
 				<h3 class="serviceName">Integration</h3>
-				<p class="price">$250.00</p>
+				<p class="price">${{ price }}</p>
 			</div>
 
-			<div class="service">
+			<div class="serviceSection">
 				<h3 class="serviceName">Training</h3>
-				<p class="price">$220.00</p>
+				<p class="price">${{ price }}</p>
 			</div>
 
-			<div class="total">
+			<div class="totalSection">
 				<h3>Total</h3>
 				<p class="totalPrice">${{ total }}</p>
 			</div>
@@ -40,6 +40,10 @@
 		</div>
 
 	</div>
+
+	<script src="https://unpkg.com/vue"></script>
+	<script src="service-list.js"></script>
+	<script src="main.js"></script>
 
 </body>
 </html>

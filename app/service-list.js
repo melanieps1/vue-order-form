@@ -20,4 +20,4 @@ var serviceOptions = [
       "price": "$220.00"
     }
 
-  ]
+  ];
