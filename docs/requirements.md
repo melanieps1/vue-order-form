@@ -10,5 +10,5 @@ add its cost to the total.
 ## Stretch Goals
 
 1. Calculate sales tax.
-2. Calculate shipping cost.
-3. Use Bootstrap for styling.
+2. Calculate travel cost.
+3. Put in a quantity counter for each service div.

@@ -1,0 +1,49 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form {
+	background-color: #83bbe5;
+	border-radius: 5px;
+	max-width: 500px;
+	min-width: 330px;
+	padding: 24px 0;
+	margin: 0 auto;
+}
+
+h1 {
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.service {
+	background-color: #de5f85;
+	border-radius: 5px;
+	height: 64px;
+	margin: 24px 24px;
+}
+
+.service:hover {
+	background-color: #a3d977;
+}
+
+h3 {
+	color: white;
+	float: left;
+	margin: 0;
+	padding: 19px 24px;
+	text-align: left;
+}
+
+p {
+	color: white;
+	float: right;
+	margin: 0;
+	padding: 21px 24px;
+}
+
+.total {
+	height: 64px;
+	margin: 12px 24px;
+}
