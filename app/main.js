@@ -10,20 +10,20 @@ var demo = new Vue({
 
 	methods: {
 
-		// services( function loopOverKeys(key) {
-		// 	console.log("key: ", key);
-		// 	console.log("name: ", name);
-		// 	console.log("price: ", price);
+		// getPrice: function(services) {
+		// 	console.log('Why won\'t you work!?!');
+		// 	price = this.serviceOptions.price
+		// 	console.log(price);
 		// },
 
-		getPrice: function(serviceOptions) {
-			console.log('I hope this is working');
-			price = this.serviceOptions.price;
-			console.log(price);
-		},
+		// getPrice: function(services) {
+		// 	console.log('Why won\'t you work!?!');
+		// 	price = this.serviceOptions.price;
+		// 	console.log(price);
+		// },
 
 		getTotal: function(total, price) {
-			console.log('Click to get total');
+			console.log('Item added to cart');
 			total += this.price;
 		}
 
