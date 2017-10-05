@@ -44,6 +44,11 @@ var demo = new Vue({
 		total: function() {
 			var total = 0;
 
+			this.services.forEach(function(s) {
+				if (s.active) {
+					total += s.price;
+				}
+			});
 			return total;
 		}
 
