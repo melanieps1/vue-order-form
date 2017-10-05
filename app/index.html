@@ -11,7 +11,8 @@
 		<h1>Services</h1>
 
 		<ul>
-			<li v-for="service in services">
+			<!-- We bind it to an active class and compare it to a field that is true/false -->
+			<li v-for="service in services" v-bind:class="{ 'active': service.active }" v-on:click="toggleActive(service)">
 				<!-- `{{ service.price | currency }}` applies the currency filter to the price of service -->
 				{{ service.name }} <span>{{ service.price | currency }}</span>
 			</li>
