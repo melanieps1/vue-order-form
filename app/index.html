@@ -5,41 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-	<div id="main" v-cloak>
-		
-		<div class="form">
+	
+	<form id="main" v-cloak>
 			
-			<h1>Services</h1>
+		<h1>Services</h1>
 
-			<div class="serviceSection" v-on:click="getTotal();">
-				<h3 class="serviceName">Web Development</h3>
-				<p class="price">${{ price }}</p>
-			</div>
+		<ul>
+			<li v-for="service in services">
+				<!-- `{{ service.price | currency }}` applies the currency filter to the price of service -->
+				{{ service.name }} <span>{{ service.price | currency }}</span>
+			</li>
+		</ul>
 
-			<div class="serviceSection" v-on:click="getTotal();">
-				<h3 class="serviceName">Design</h3>
-				<p class="price" v-for="price in services">${{ price }}</p>
-			</div>
-
-			<div class="serviceSection" v-on:click="getTotal();">
-				<h3 class="serviceName">Integration</h3>
-				<p class="price">${{ price }}</p>
-			</div>
-
-			<div class="serviceSection" v-on:click="getTotal();">
-				<h3 class="serviceName">Training</h3>
-				<p class="price">${{ price }}</p>
-			</div>
-
-			<div class="totalSection">
-				<h3>Total</h3>
-				<p class="totalPrice">${{ total }}</p>
-			</div>
-
+		<div class="total">
+			Total: <span>{{ total() | currency }}</span>
 		</div>
 
-	</div>
+	</form>
 
 	<script src="https://unpkg.com/vue"></script>
 	<script src="service-list.js"></script>
